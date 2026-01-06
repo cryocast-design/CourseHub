@@ -1,0 +1,167 @@
+.course-detail-page {
+    padding-bottom: 4rem;
+}
+
+.detail-header-bg {
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 3rem 0;
+}
+
+.detail-badges {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.badge-verified {
+    background-color: #d1fae5;
+    color: #065f46;
+    gap: 0.35rem;
+}
+
+.detail-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.detail-instructor {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.detail-stats {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.rating-large {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.rating-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-text);
+    line-height: 1;
+}
+
+.stars {
+    display: flex;
+    color: #fbbf24;
+}
+
+.review-count-large {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+}
+
+.price-large {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Content Layout */
+.detail-content {
+    display: grid;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .detail-content {
+        grid-template-columns: 1fr 350px;
+    }
+}
+
+.detail-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag-pill {
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.course-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+/* Sidebar */
+.action-card,
+.links-card {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.sidebar-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+}
+
+.btn-block {
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 0.75rem;
+}
+
+.guarantee-text {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.links-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.2s;
+    color: var(--color-text);
+}
+
+.social-link:last-child {
+    border-bottom: none;
+}
+
+.social-link:hover {
+    background-color: var(--color-bg-subtle);
+}
+
+.external-icon {
+    margin-left: auto;
+    color: var(--color-text-muted);
+}

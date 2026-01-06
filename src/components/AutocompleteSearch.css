@@ -1,0 +1,143 @@
+.autocomplete-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.autocomplete-input-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+    padding: 0.5rem;
+    transition: border-color 0.2s;
+}
+
+.autocomplete-input-container:focus-within {
+    border-color: var(--color-primary);
+}
+
+.search-icon {
+    margin-left: 1rem;
+    color: var(--color-text-muted);
+}
+
+.autocomplete-input {
+    flex: 1;
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+    outline: none;
+    background: transparent;
+}
+
+.clear-btn {
+    color: var(--color-text-muted);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.clear-btn:hover {
+    color: var(--color-text);
+}
+
+.search-submit-btn {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-full);
+    transition: background-color 0.2s;
+}
+
+.search-submit-btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Dropdown */
+.autocomplete-dropdown {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    z-index: 100;
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.autocomplete-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid var(--color-bg-subtle);
+}
+
+.autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.autocomplete-item:hover {
+    background-color: var(--color-bg-subtle);
+}
+
+.item-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-title {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.item-verified-badge {
+    color: var(--color-success);
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.item-instructor {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.no-results {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--color-text-muted);
+}
